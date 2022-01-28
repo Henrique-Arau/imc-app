@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -13,28 +14,31 @@
         android:layout_height="wrap_content"
 
         android:text="Hello word"
-        />
+        tools:ignore="HardcodedText" />
 
     <TextView
         style="@style/title_purple"
+        android:layout_marginTop="34dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello word"
-         />
+        tools:ignore="HardcodedText" />
 
     <RadioButton
         style="@style/title_purple"
         android:textSize="22sp"
+        android:layout_marginTop="24dp"
         android:layout_width="wrap_content"
         android:text="Olá RadioButton"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText" />
     <CheckBox
         style="@style/title_purple"
         android:layout_width="wrap_content"
         android:text="Olá Checkbox"
         android:textColor="@color/black"
         android:layout_height="wrap_content"
-/>
+        tools:ignore="HardcodedText" />
 
 
 </LinearLayout>
