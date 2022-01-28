@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        style="@style/title_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Hello word"
+        />
+
+    <TextView
+        style="@style/title_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello word"
+         />
+
+    <RadioButton
+        style="@style/title_purple"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:text="Olá RadioButton"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        style="@style/title_purple"
+        android:layout_width="wrap_content"
+        android:text="Olá Checkbox"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+/>
+
+
+</LinearLayout>
