@@ -1,4 +1,5 @@
 # imc-app
 
 
-![imc](https://user-images.githubusercontent.com/83648293/151639021-9be73964-7977-43ff-97a1-e6ee9866ab54.png)
+
+![imc2](https://user-images.githubusercontent.com/83648293/151643720-4e90b868-f77b-4e20-816c-843e5232a56a.png)
