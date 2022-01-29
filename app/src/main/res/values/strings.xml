@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">imc-app</string>
+    <string name="hint_altura">alturaEDT</string>
 </resources>

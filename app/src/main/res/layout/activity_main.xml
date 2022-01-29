@@ -33,7 +33,7 @@
          />
 
     <Button
-        android:id="@+id/calcularEDT"
+        android:id="@+id/calcularBTN"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Calcular"
         android:padding="15dp"

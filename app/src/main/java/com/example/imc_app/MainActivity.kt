@@ -2,44 +2,43 @@ package com.example.imc_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.widget.Toast
+import androidx.core.widget.doAfterTextChanged
+import androidx.core.widget.doOnTextChanged
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.w("lifecycle", "CREATE - Estou criando a tela")
+        setListeners()
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.w("lifecycle", "STAR - Deixei a tela visivel para você")
-    }
+   private fun setListeners() {
 
-    override fun onResume() {
-        super.onResume()
-        Log.w("lifecycle", "RESUME - Agora você pode interagir com a tela")
-    }
+       alturaEDT?.doAfterTextChanged { text ->
+           Toast.makeText(this, text.toString(), Toast.LENGTH_SHORT).show()
+       }
 
-    override fun onPause() {
-        super.onPause()
-        Log.w("lifecycle", "PAUSE - A tela perdeu o foco, você não pode mais interagir")
-    }
+       pesoEDT?.doOnTextChanged { text, _, _, _ ->
+          // titleTXT?.text = text
 
-    override fun onStop() {
-        super.onStop()
-        Log.w("lifecycle", "STOP - A tela não está mais visivel mas ainda existe")
-    }
+       }
+       calcularBTN?.setOnClickListener {
+           calcularIMC(pesoEDT.text.toString(), alturaEDT.text.toString())
+       }
+   }
+    private fun calcularIMC(peso: String, altura: String) {
+        val peso = peso.toFloatOrNull()
+        val altura = altura.toFloatOrNull()
 
-    override fun onRestart() {
-        super.onRestart()
-        Log.w("lifecycle", "\nRESTART - A tela está retomando o foco")
+        if (peso != null && altura != null) {
+            val imc = peso / (altura * altura)
+            titleTXT.text = "Seu IMC e:\n%.2f".format(imc)
+        }
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.w("lifecycle", "\nDESTROY - oh não! a tela foi destruida")
-    }
-
 
 }
+
+

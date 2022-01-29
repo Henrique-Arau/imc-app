@@ -3,11 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/activity_result.xml" value="0.12335359675785208" />
         <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/main_constraint.xml" value="0.1" />
         <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/main_linear.xml" value="0.1" />
-        <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/main_relative.xml" value="0.152" />
+        <entry key="..\:/Users/penie/AndroidStudioProjects/imcapp/app/src/main/res/layout/main_relative.xml" value="0.264" />
       </map>
     </option>
   </component>

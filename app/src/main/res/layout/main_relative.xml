@@ -15,6 +15,7 @@
         android:layout_marginHorizontal="24dp"
         android:layout_marginStart="4dp"
         android:hint="Peso (Ex: 68.8 KG)"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleTXT"
         tools:ignore="NotSibling" />
@@ -29,7 +30,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="60dp"
-        android:hint="Altura (Ex: 1.78 m)"
+        android:hint="@string/hint_altura"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/pesoEDT"
@@ -37,7 +39,7 @@
         tools:visibility="visible" />
 
     <Button
-        android:id="@+id/calcularEDT"
+        android:id="@+id/calcularBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
